@@ -8,7 +8,6 @@ import { Ping } from '#/components/ping';
 import { delayRecommendedProducts, delayReviews } from '#/lib/constants';
 import { Suspense } from 'react';
 
-export const revalidate = 60;
 export const generateStaticParams = () => {
   return [];
 };
