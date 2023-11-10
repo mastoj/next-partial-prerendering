@@ -14,6 +14,9 @@ export default async function Page() {
   console.log('==> Rendering page');
   return (
     <div className="space-y-8 lg:space-y-14">
+      <div className="text-2xl font-medium text-white">
+        Streaming Demo {new Date().toISOString()}
+      </div>
       <SingleProduct
         data={fetch(`https://app-router-api.vercel.app/api/products?id=1`)}
       />
