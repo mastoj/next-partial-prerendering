@@ -9,6 +9,7 @@ export async function RecommendedProducts({
   path: string;
   data: Promise<Response>;
 }) {
+  console.log('==> Rendering recommended products');
   headers();
   const products = (await data.then((res) => res.json())) as Product[];
 
