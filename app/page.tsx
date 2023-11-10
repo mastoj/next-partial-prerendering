@@ -8,7 +8,7 @@ import { Ping } from '#/components/ping';
 import { delayRecommendedProducts, delayReviews } from '#/lib/constants';
 import { Suspense } from 'react';
 
-export const runtime = 'edge';
+export const revalidate = 60;
 
 export default async function Page() {
   console.log('==> Rendering page');
