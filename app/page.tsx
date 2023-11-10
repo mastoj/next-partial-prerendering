@@ -9,6 +9,9 @@ import { delayRecommendedProducts, delayReviews } from '#/lib/constants';
 import { Suspense } from 'react';
 
 export const revalidate = 60;
+export const generateStaticParams = () => {
+  return [];
+};
 
 export default async function Page() {
   console.log('==> Rendering page');
